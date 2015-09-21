@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="library" method="upgrade" version="2.5">
+    <name>SiteGround - Library</name>
+    <libraryname>siteground</libraryname>
+    <creationDate>November 2014</creationDate>
+    <author>Roberto Segura</author>
+    <authorEmail>roberto@phproberto.com</authorEmail>
+    <authorUrl>www.phproberto.com</authorUrl>
+    <copyright>Copyright (C) 2014 SiteGround.com - All rights reserved.</copyright>
+    <license>GNU General Public License version 2 or later, see LICENSE.</license>
+    <version>1.0.0</version>
+    <description>Siteground Libraries</description>
+    <files>
+        <folder>form</folder>
+        <folder>helper</folder>
+        <folder>html</folder>
+        <folder>language</folder>
+        <folder>layout</folder>
+        <folder>module</folder>
+        <folder>path</folder>
+        <folder>plugin</folder>
+        <filename>README.md</filename>
+        <filename>siteground.xml</filename>
+        <filename>library.php</filename>
+    </files>
+
+	<media folder="media">
+		<folder>siteground</folder>
+	</media>
+</extension>

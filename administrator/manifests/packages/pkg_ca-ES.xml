@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<extension type="package" version="3.3">
+<name>Catalan Language Pack</name>
+<packagename>ca-ES</packagename> <!-- the packagename has to be the same as the name of pkg_whatever.xml -->
+<version>3.3.6.1</version> <!-- change the version # when updating, will display in manager -->
+<creationDate>2014-10-05</creationDate> <!-- will display in manager -->
+<author>Catalan Translation Team</author> <!-- will display in manager -->
+<authorEmail>el.libre@tradu.cat</authorEmail> <!-- will display in manager -->
+<authorUrl>http://www.catmidia.cat</authorUrl>
+ <!-- will display in manager -->
+ <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+<url></url>
+<packager>Catalan Translation Team</packager>
+<packagerurl>www.tradu.cat</packagerurl>
+<description>3.3.6 Joomla Catalan Language Package - Paquet català per a Joomla</description>
+<files>
+        <file type="language" client="site" id="ca-ES">site_ca-ES.zip</file>
+        <file type="language" client="administrator" id="ca-ES">admin_ca-ES.zip</file>
+</files>
+         <updateservers>
+                <server type="collection" priority="1" name="Accredited Joomla! Translations">http://update.joomla.org/language/translationlist.xml</server>
+        </updateservers>
+</extension>

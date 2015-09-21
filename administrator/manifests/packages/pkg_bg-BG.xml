@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<extension type="package" version="3.3" method="upgrade">
+    <name>Bulgarian Language Pack</name>
+    <packagename>bg-BG</packagename>
+    <version>3.3.0.1</version>
+    <creationDate>2014-05-31</creationDate>
+    <author>Joomla! Bulgaria</author>
+    <authorEmail>admin@joomla.bg</authorEmail>
+    <authorUrl>http://joomla.bg</authorUrl>
+    <url>http://joomla.bg</url>
+    <packager>Joomla! Bulgaria</packager>
+    <packagerurl>http://joomla.bg</packagerurl>
+    <description><![CDATA[
+    <p>Превод на Joomla! 3.3 на български език. Повече информация можете да намерите на сайта на <a title="Joomla! Bulgaria" href="http://www.joomla.bg" target="_blank">Joomla! Bulgaria</a>.</p>]]>
+    </description>
+    <files>
+        <file type="language" client="site" id="bg-BG">site_bg-BG.zip</file>
+        <file type="language" client="administrator" id="bg-BG">admin_bg-BG.zip</file>
+    </files>
+    <updateservers>
+        <server type="collection" priority="1" name="Accredited Joomla! Translations">http://update.joomla.org/language/translationlist_3.xml</server>
+    </updateservers>
+</extension>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1" client="site" method="upgrade">
+	<name>MOD_SITEGROUND_SOCIAL</name>
+    <creationDate>November 2014</creationDate>
+    <author>Roberto Segura</author>
+    <authorEmail>roberto@phproberto.com</authorEmail>
+    <authorUrl>www.phproberto.com</authorUrl>
+    <copyright>Copyright (C) 2014 SiteGround.com - All rights reserved.</copyright>
+    <license>GNU General Public License version 2 or later, see LICENSE.</license>
+    <version>1.0.0</version>
+	<description>MOD_SITEGROUND_SOCIAL_XML_DESCRIPTION</description>
+	<files>
+		<folder>language</folder>
+		<folder>module</folder>
+		<folder>tmpl</folder>
+		<filename>LICENSE</filename>
+		<filename>README.md</filename>
+		<filename module="mod_siteground_social">mod_siteground_social.php</filename>
+		<filename>mod_siteground_social.xml</filename>
+	</files>
+	<config>
+		<fields name="params" addfieldpath="/modules/mod_siteground_social/field">
+			<fieldset name="basic">
+				<field
+					name="layout"
+					type="modulelayout"
+					default=":_default"
+					label="MOD_SITEGROUND_SOCIAL_PARAM_TEMPLATE"
+					description="MOD_SITEGROUND_SOCIAL_PARAM_TEMPLATE_DESC"
+				/>
+				<field
+					name="target"
+					type="list"
+					default="self"
+					label="MOD_SITEGROUND_SOCIAL_PARAM_TARGET"
+					description="MOD_SITEGROUND_SOCIAL_PARAM_TARGET_DESC"
+					>
+						<option value="self">MOD_SITEGROUND_SOCIAL_PARAM_TARGET_OPTION_SELF</option>
+						<option value="blank">MOD_SITEGROUND_SOCIAL_PARAM_TARGET_OPTION_NEW</option>
+				</field>
+				<field
+					name="facebook_id"
+					type="text"
+					label="MOD_SITEGROUND_SOCIAL_PARAM_FACEBOOK_ID"
+					description="MOD_SITEGROUND_SOCIAL_PARAM_FACEBOOK_ID_DESC"
+				/>
+				<field
+					name="linkedin_id"
+					type="text"
+					label="MOD_SITEGROUND_SOCIAL_PARAM_LINKEDIN_ID"
+					description="MOD_SITEGROUND_SOCIAL_PARAM_LINKEDIN_ID_DESC"
+				/>
+				<field
+					name="twitter_id"
+					type="text"
+					label="MOD_SITEGROUND_SOCIAL_PARAM_TWITTER_ID"
+					description="MOD_SITEGROUND_SOCIAL_PARAM_TWITTER_ID_DESC"
+				/>
+				<field
+					name="gplus_id"
+					type="text"
+					label="MOD_SITEGROUND_SOCIAL_PARAM_GPLUS_ID"
+					description="MOD_SITEGROUND_SOCIAL_PARAM_GPLUS_ID_DESC"
+				/>
+				<field
+					name="email"
+					type="text"
+					label="MOD_SITEGROUND_SOCIAL_PARAM_EMAIL"
+					description="MOD_SITEGROUND_SOCIAL_PARAM_EMAIL_DESC"
+				/>
+				<field
+					name="contact_menu"
+					type="menuitem"
+					label="MOD_SITEGROUND_SOCIAL_PARAM_CONTACT_MENU"
+					description="MOD_SITEGROUND_SOCIAL_PARAM_CONTACT_MENU_DESC"
+				>
+					<option value="">MOD_SITEGROUND_SOCIAL_PARAM_CONTACT_MENU_OPTION_SELECT</option>
+				</field>
+			</fieldset>
+			<fieldset name="advanced">
+				<field
+					name="debug"
+					type="radio"
+					class="btn-group btn-group-yesno"
+					default="0"
+					label="LIB_SITEGROUND_EXTENSION_PARAMS_DEBUG"
+					description="LIB_SITEGROUND_EXTENSION_PARAMS_DEBUG_DESC"
+					>
+					<option value="1">JENABLED</option>
+					<option value="0">JDISABLED</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

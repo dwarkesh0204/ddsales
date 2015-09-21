@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<extension type="package" version="3.2">
+   <name>Korean Language Pack</name>
+   <packagename>ko-KR</packagename>
+   <version>3.2.3</version>
+	<creationDate>2014-03-15</creationDate>
+   <author>Korean translation team</author>
+   <authorEmail>kangc@kilmeny.net</authorEmail>
+   <url>http://kilmeny.net</url>
+   <packager>kangc@kilmeny.net</packager>
+   <packagerurl>http://kilmeny.net/</packagerurl> 
+   <description>Joomla 3.2.3 Korean Language Package</description>
+   <files>
+        <file type="language" client="site" id="ko-KR">site_ko-KR.zip</file>
+        <file type="language" client="administrator" id="ko-KR">admin_ko-KR.zip</file>
+   </files>
+   <updateservers>
+     <server type="collection" priority="1" name="Accredited Joomla! Translations">http://update.joomla.org/language/translationlist_3.xml</server>
+   </updateservers>
+</extension>
+

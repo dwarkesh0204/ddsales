@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metafile version="3.3" client="site">
+	<tag>pt-PT</tag>
+	<name>Português (pt-PT)</name>
+	<version>3.3.3.1</version>
+	<creationDate>07/08/2014</creationDate>
+	<author>Comunidade JoomlaPT Portugal</author>
+	<authorEmail>geral@joomlapt.com</authorEmail>
+	<authorUrl>www.joomlapt.com</authorUrl>
+	<copyright>Copyright (C) 2005 - 2014 Open Source Matters &amp; Comunidade JoomlaPT. Todos os Direitos Reservados.</copyright>
+	<license>Licença GNU GPL v2 ou posterior; ver LICENSE.txt</license>
+	<description><![CDATA[
+        Idioma Português Portugal para interface do sítio Joomla 3.x<br/>
+        Copyright 2005 - 2014 Open Source Matters e Comunidade JoomlaPT. Todos os Direitos Reservados.<br/>
+        Tradução licenciada de acordo com o termo de licenciamento de <a href="http://www.opensourcematters.org" target="_blank">OpenSourceMatters</a> e <a href="http://www.joomla.org" target="_blank">Joomla!</a> pela <a href="http://www.gnu.org/licenses/gpl-2.0.html" target="_blank">licença GNU/GPL (v.2.0)</a>.<br/>
+        Se encontrar algum erro de digitação, traduções incorretas ou se deseja sugerir melhorias, participe no fórum <a href="http://www.joomlapt.com">JoomlaPT</a>da tradução ou junte-se a nós no <a href="https://www.transifex.com/projects/p/j3corelang/language/pt_PT/" target="_blank">Projeto Transifex Joomla 3</a> e colabore diretamente na tradução.<br/><br/>
+    ]]>
+	</description>
+	<metadata>
+		<name>Português (Portugal)</name>
+		<tag>pt-PT</tag>
+		<rtl>0</rtl>
+		<locale>pt_PT.utf8, pt_PT.UTF-8, pt_PT.UTF-8@euro, pt_PT, pt, pt-PT, Português, Portuguese</locale>
+		<firstDay>1</firstDay>
+		<weekEnd>0,6</weekEnd>
+	</metadata>
+    <params />
+</metafile>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<extension type="package" version="3.3">
+   <name>Serbian Cyrillic Language Pack</name>
+   <packagename>sr-RS</packagename>
+   <version>3.3.6.1</version>
+   <creationDate>2014</creationDate>
+   <author>Joomla! Serbia - Translation Team</author>
+   <authorEmail>translation@joomla-serbia.com</authorEmail>
+   <authorUrl>http://www.joomla-serbia.com</authorUrl>
+    <copyright>Copyright (C) 2005 - 2014 Open Source Matters. All rights reserved.</copyright>
+   <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+   <url></url>
+   <packager>Joomla! Serbian Cyrillic</packager>
+   <packagerurl>www.joomla-serbia.com</packagerurl>
+   <description>3.3 Joomla Serbian Cyrillic Language Package</description>
+   <files>
+	<file type="language" client="site" id="sr-RS">site_sr-RS.zip</file>
+	<file type="language" client="administrator" id="sr-RS">admin_sr-RS.zip</file>
+   </files>
+	<updateservers>
+        <server type="collection" priority="1" name="Accredited Joomla! Translations">http://update.joomla.org/language/translationlist_3.xml</server>
+    </updateservers>
+</extension>

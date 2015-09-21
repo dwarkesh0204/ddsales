@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension version="3.4" client="site" type="language" method="upgrade">
+	<name>Croatian (hr-HR)</name>
+	<tag>hr-HR</tag>
+	<version>3.4.0.1</version>
+	<creationDate>2015-02-28</creationDate>
+	<author>Croatian Translation Team</author>
+	<authorEmail>prijevod@joomla.hr</authorEmail>
+	<authorUrl>http://www.joomla.hr</authorUrl>
+	<copyright>Copyright (C) 2005 - 2015 Open Source Matters and joomla.hr. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<description>
+		<![CDATA[<div align="center">
+			<table border="0" width="90%">
+			<tr>
+			<td width="100%" colspan="2">
+			<div align="center"><h3>Hrvatski prijevod Joomla! 3.4.0 od Joomla.hr</h3></div>
+			<hr />
+			</td>
+			</tr>
+			<tr>
+			<td width="20%"><u><strong>Područje:</strong></u></td>
+			<td width="80%">Website (Frontend)</td>
+			</tr>
+			<tr>
+			<td width="20%"><u><strong>Joomla! verzija:</strong></u></td>
+			<td width="80%">3.4.0</td>
+			</tr>
+			<tr>
+			<td width="20%"><u><strong>Verzija prijevoda:</strong></u></td>
+			<td width="80%">3.4.0</td>
+			</tr>
+			<td width="100%" colspan="2"><hr /></td>
+			<tr>
+			<td width="20%"><u><strong>Joomla Hrvatska Website:</strong></u></td>
+			<td width="80%"><a href="http://www.joomla.hr" target="_blank">http://www.joomla.hr</a></td>
+			</tr>
+			<tr>
+			<td width="20%"><u><strong>Joomla Hrvatska - Website za preuzimanje prijevoda:</strong></u></td>
+			<td width="80%"><a href="http://joomlacode.org/gf/project/joomlahrvatska/frs/" target="_blank">http://joomlacode.org/gf/project/joomlahrvatska/frs/</a></td>
+			</tr>
+			<tr>
+			<td width="100%" colspan="2">
+			<strong><font color="#008000">Preporučamo da redovito provjeravate site za preuzimanje prijevoda da biste uvijek imali aktualnu verziju.</font></strong></td>
+			</tr>
+			</table>
+			</div>]]>
+	</description>
+	<files>
+		<filename>hr-HR.ini</filename>
+		<filename>hr-HR.com_ajax.ini</filename>
+		<filename>hr-HR.com_config.ini</filename>
+		<filename>hr-HR.com_contact.ini</filename>
+		<filename>hr-HR.com_content.ini</filename>
+		<filename>hr-HR.com_finder.ini</filename>
+		<filename>hr-HR.com_mailto.ini</filename>
+		<filename>hr-HR.com_media.ini</filename>
+		<filename>hr-HR.com_messages.ini</filename>
+		<filename>hr-HR.com_newsfeeds.ini</filename>
+		<filename>hr-HR.com_search.ini</filename>
+		<filename>hr-HR.com_tags.ini</filename>
+		<filename>hr-HR.com_users.ini</filename>
+		<filename>hr-HR.com_weblinks.ini</filename>
+		<filename>hr-HR.com_wrapper.ini</filename>
+		<filename>hr-HR.files_joomla.sys.ini</filename>
+		<filename>hr-HR.finder_cli.ini</filename>
+		<filename>hr-HR.lib_fof.sys.ini</filename>
+		<filename>hr-HR.lib_idna_convert.sys.ini</filename>
+		<filename>hr-HR.lib_joomla.ini</filename>
+		<filename>hr-HR.lib_joomla.sys.ini</filename>
+		<filename>hr-HR.lib_phpass.sys.ini</filename>
+		<filename>hr-HR.lib_phputf8.sys.ini</filename>
+		<filename>hr-HR.lib_simplepie.sys.ini</filename>
+		<filename>hr-HR.mod_articles_archive.ini</filename>
+		<filename>hr-HR.mod_articles_archive.sys.ini</filename>
+		<filename>hr-HR.mod_articles_categories.ini</filename>
+		<filename>hr-HR.mod_articles_categories.sys.ini</filename>
+		<filename>hr-HR.mod_articles_category.ini</filename>
+		<filename>hr-HR.mod_articles_category.sys.ini</filename>
+		<filename>hr-HR.mod_articles_latest.ini</filename>
+		<filename>hr-HR.mod_articles_latest.sys.ini</filename>
+		<filename>hr-HR.mod_articles_news.ini</filename>
+		<filename>hr-HR.mod_articles_news.sys.ini</filename>
+		<filename>hr-HR.mod_articles_popular.ini</filename>
+		<filename>hr-HR.mod_articles_popular.sys.ini</filename>
+		<filename>hr-HR.mod_banners.ini</filename>
+		<filename>hr-HR.mod_banners.sys.ini</filename>
+		<filename>hr-HR.mod_breadcrumbs.ini</filename>
+		<filename>hr-HR.mod_breadcrumbs.sys.ini</filename>
+		<filename>hr-HR.mod_custom.ini</filename>
+		<filename>hr-HR.mod_custom.sys.ini</filename>
+		<filename>hr-HR.mod_feed.ini</filename>
+		<filename>hr-HR.mod_feed.sys.ini</filename>
+		<filename>hr-HR.mod_finder.ini</filename>
+		<filename>hr-HR.mod_finder.sys.ini</filename>
+		<filename>hr-HR.mod_footer.ini</filename>
+		<filename>hr-HR.mod_footer.sys.ini</filename>
+		<filename>hr-HR.mod_languages.ini</filename>
+		<filename>hr-HR.mod_languages.sys.ini</filename>
+		<filename>hr-HR.mod_login.ini</filename>
+		<filename>hr-HR.mod_login.sys.ini</filename>
+		<filename>hr-HR.mod_menu.ini</filename>
+		<filename>hr-HR.mod_menu.sys.ini</filename>
+		<filename>hr-HR.mod_random_image.ini</filename>
+		<filename>hr-HR.mod_random_image.sys.ini</filename>
+		<filename>hr-HR.mod_related_items.ini</filename>
+		<filename>hr-HR.mod_related_items.sys.ini</filename>
+		<filename>hr-HR.mod_search.ini</filename>
+		<filename>hr-HR.mod_search.sys.ini</filename>
+		<filename>hr-HR.mod_stats.ini</filename>
+		<filename>hr-HR.mod_stats.sys.ini</filename>
+		<filename>hr-HR.mod_syndicate.ini</filename>
+		<filename>hr-HR.mod_syndicate.sys.ini</filename>
+		<filename>hr-HR.mod_tags_popular.ini</filename>
+		<filename>hr-HR.mod_tags_popular.sys.ini</filename>
+		<filename>hr-HR.mod_tags_similar.ini</filename>
+		<filename>hr-HR.mod_tags_similar.sys.ini</filename>
+		<filename>hr-HR.mod_users_latest.ini</filename>
+		<filename>hr-HR.mod_users_latest.sys.ini</filename>
+		<filename>hr-HR.mod_weblinks.ini</filename>
+		<filename>hr-HR.mod_weblinks.sys.ini</filename>
+		<filename>hr-HR.mod_whosonline.ini</filename>
+		<filename>hr-HR.mod_whosonline.sys.ini</filename>
+		<filename>hr-HR.mod_wrapper.ini</filename>
+		<filename>hr-HR.mod_wrapper.sys.ini</filename>
+		<filename>hr-HR.tpl_beez3.ini</filename>
+		<filename>hr-HR.tpl_beez3.sys.ini</filename>
+		<filename>hr-HR.tpl_protostar.ini</filename>
+		<filename>hr-HR.tpl_protostar.sys.ini</filename>
+		<filename>hr-HR.localise.php</filename>
+		<filename file="meta">install.xml</filename>
+		<filename file="meta">hr-HR.xml</filename>
+		<filename>index.html</filename>
+	</files>
+	<params />
+</extension>

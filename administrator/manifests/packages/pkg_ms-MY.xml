@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<extension type="package" version="3.3">
+	<name>Bahasa Melayu (Malaysia)</name>
+	<packagename>ms-MY</packagename>
+	<version>3.3.1.1</version>
+	<creationDate>2014-07-09</creationDate>
+	<author>MU DOT MY | JOOMLA MALAYSIA</author>
+	<authorEmail>support@mu.my | info@joomla.org.my</authorEmail>
+	<authorUrl>www.mu.my | joomla.org.my</authorUrl>
+	<copyright>Copyright (C) 2005 - 2014 Open Source Matters. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+<description>Pakej Bahasa Melayu untuk Joomla! 3.x</description>
+<files>
+        <file type="language" client="administrator" id="ms-MY">admin_ms-MY.zip</file>
+        <file type="language" client="site" id="ms-MY">site_ms-MY.zip</file>
+</files>
+<updateservers>
+        <server type="collection" priority="1" name="Accredited Joomla! Translations">http://update.joomla.org/language/translationlist_3.xml</server>
+    </updateservers>
+</extension>
