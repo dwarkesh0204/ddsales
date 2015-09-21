@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- $Id: MkLanguagepackSnapshotBuild.sh 1829 2013-04-08 09:34:26Z gerrit_hoekstra $ -->
+<extension version="3.2" type="package" method="upgrade">
+  <name>Afrikaans (South Africa)</name>
+  <packagename>af-ZA</packagename>
+  <packager>MkLanguagepackSnapshotBuild.sh</packager>
+  <packagerurl>joomla4africa.org</packagerurl>
+  <tag>af-ZA</tag>
+  <version>3.2.0.2</version>
+  <creationDate>10 Sep 2014</creationDate>
+  <author>Gerrit Hoekstra</author>
+  <authorEmail>webmaster@joomla4africa.org</authorEmail>
+  <url>http://joomla4africa.org</url>
+  <copyright>Copyright (C) 2005 - 2014 Open Source Matters. All rights reserved</copyright>
+  <copyright>Copyright (C) Afrikaans Translation 2006 - 2014 Gerrit Hoekstra. Alle regte voorbehou.</copyright>
+  <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+  <description><![CDATA[
+    <div align="center">
+    <table border="0" width="600">
+      <tr>
+        <td width="100%" colspan="2">
+          <div align="center">
+            <h3>Afrikaanse Vertaling vir Joomla! 3.2.0</h3>
+          </div>
+          <hr />
+        </td>
+      </tr>
+      <tr>
+        <td width="100%" colspan="2">
+          <div align="left">
+            <img border="0" src="http://joomla4africa.org/images/smallflags/South Africa.gif" alt="Afrikaans (ZA)" />
+          </div>
+          <hr />
+        </td>
+      </tr>
+      <tr>
+          <td width="18%"><b>Taal:</b></td>
+          <td width="80%">Afrikaanse Taalpaket in die vertroulike aanspreeksvorm</td>
+      </tr>
+      <tr>
+          <td width="18%"><b>Skema:</b></td>
+          <td width="80%">package</td>
+      </tr>
+      <tr>
+          <td width="18%"><b>Outeur:</b></td>
+          <td width="80%"><a mailto="webmaster@joomla4africa.org">Gerrit Hoekstra</a></td>
+      </tr>
+      <tr>
+          <td width="18%"><b>Webwerf:</b></td>
+          <td width="80%"><a target="_blank" href="http://joomla4africa.org">http://joomla4africa.org</a></td>
+      </tr>
+      <tr>
+          <td width="18%"><b>Hersiening:</b></td>
+          <td width="80%">3.2.0v2</td>
+      </tr>
+    </table>
+    </div>
+  ]]>
+  </description>
+  <files>
+    <file type="language" client="site" id="af-ZA">site_af-ZA.zip</file>
+    <file type="language" client="administrator" id="af-ZA">admin_af-ZA.zip</file>
+  </files>
+  <updateservers>
+    <server type="collection" priority="1" name="Accredited Joomla! Translations">http://update.joomla.org/language/translationlist.xml</server>
+    <server type="collection" priority="2" name="Afrikaans Language Updates">http://joomla4africa.org/updates/translationlist.xml</server>
+  </updateservers>
+</extension>

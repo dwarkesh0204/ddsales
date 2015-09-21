@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.x" type="plugin" group="content" method="upgrade">
+	<name>PLG_CONTENT_SITEGROUND_SOCIAL</name>
+    <creationDate>December 2014</creationDate>
+    <author>Roberto Segura</author>
+    <authorEmail>roberto@phproberto.com</authorEmail>
+    <authorUrl>www.phproberto.com</authorUrl>
+    <copyright>Copyright (C) 2014-2015 SiteGround.com - All rights reserved.</copyright>
+    <license>GNU General Public License version 2 or later, see LICENSE.</license>
+    <version>1.0.2</version>
+	<description>PLG_CONTENT_SITEGROUND_SOCIAL_XML_DESCRIPTION</description>
+
+	<files>
+		<folder>language</folder>
+		<folder>layouts</folder>
+		<filename>LICENSE</filename>
+		<filename>README.md</filename>
+		<filename plugin="siteground_social">siteground_social.php</filename>
+	</files>
+
+	<media folder="media">
+		<folder>plg_content_siteground_social</folder>
+	</media>
+
+	<config>
+		<fields name="params" addfieldpath="/libraries/siteground/form/field">
+			<fieldset name="basic">
+				<field
+					name="script"
+					type="siteground.script"
+					hiddenLabel="true"
+					loadJquery="true"
+					script="siteground/js/plugin/comcontent.min.js"
+				/>
+				<field
+					name="mode"
+					type="list"
+					label="PLG_CONTENT_SITEGROUND_SOCIAL_PARAM_MODE"
+					description="PLG_CONTENT_SITEGROUND_SOCIAL_PARAM_MODE_DESC"
+					default="include"
+					class="span6"
+					>
+						<option value="include">PLG_CONTENT_SITEGROUND_SOCIAL_PARAM_MODE_OPTION_INCLUDE</option>
+						<option value="exclude">PLG_CONTENT_SITEGROUND_SOCIAL_PARAM_MODE_OPTION_EXCLUDE</option>
+				</field>
+				<field
+					name="excludedCategories"
+					type="category"
+					extension="com_content"
+					multiple="true"
+					label="PLG_CONTENT_SITEGROUND_SOCIAL_PARAM_EXCLUDED_CATEGORIES"
+					description="PLG_CONTENT_SITEGROUND_SOCIAL_PARAM_EXCLUDED_CATEGORIES_DESC"
+					class="js-siteground-plugin-comcontent-mode-exclude"
+				/>
+				<field
+					name="includedCategories"
+					type="category"
+					extension="com_content"
+					multiple="true"
+					label="PLG_CONTENT_SITEGROUND_SOCIAL_PARAM_INCLUDED_CATEGORIES"
+					description="PLG_CONTENT_SITEGROUND_SOCIAL_PARAM_INCLUDED_CATEGORIES_DESC"
+					class="js-siteground-plugin-comcontent-mode-include"
+				/>
+				<field
+					name="position"
+					type="list"
+					default="1"
+					label="PLG_CONTENT_SITEGROUND_SOCIAL_PARAM_POSITION"
+					description="PLG_CONTENT_SITEGROUND_SOCIAL_PARAM_POSITION_DESC"
+					>
+					<option value="0">PLG_CONTENT_SITEGROUND_SOCIAL_PARAM_POSITION_OPTION_BEFORE</option>
+					<option value="1">PLG_CONTENT_SITEGROUND_SOCIAL_PARAM_POSITION_OPTION_AFTER</option>
+					<option value="2">PLG_CONTENT_SITEGROUND_SOCIAL_PARAM_POSITION_OPTION_BOTH</option>
+				</field>
+				<field
+					name="loadEvent"
+					type="list"
+					default="hover"
+					label="PLG_CONTENT_SITEGROUND_SOCIAL_PARAM_LOAD_EVENT"
+					description="PLG_CONTENT_SITEGROUND_SOCIAL_PARAM_LOAD_EVENT_DESC"
+					class="span7"
+					>
+					<option value="scroll">PLG_CONTENT_SITEGROUND_SOCIAL_PARAM_LOAD_EVENT_OPTION_SCROLL</option>
+					<option value="hover">PLG_CONTENT_SITEGROUND_SOCIAL_PARAM_LOAD_EVENT_OPTION_HOVER</option>
+				</field>
+				<field
+					name="show_twitter"
+					type="radio"
+					class="btn-group btn-group-yesno"
+					default="1"
+					label="LIB_SITEGROUND_EXTENSION_PARAMS_SHOW_TWITTER"
+					description="LIB_SITEGROUND_EXTENSION_PARAMS_SHOW_TWITTER_DESC"
+					>
+					<option value="1">JENABLED</option>
+					<option value="0">JDISABLED</option>
+				</field>
+				<field
+					name="show_facebook"
+					type="radio"
+					class="btn-group btn-group-yesno"
+					default="1"
+					label="LIB_SITEGROUND_EXTENSION_PARAMS_SHOW_FACEBOOK"
+					description="LIB_SITEGROUND_EXTENSION_PARAMS_SHOW_FACEBOOK_DESC"
+					>
+					<option value="1">JENABLED</option>
+					<option value="0">JDISABLED</option>
+				</field>
+				<field
+					name="show_gplus"
+					type="radio"
+					class="btn-group btn-group-yesno"
+					default="1"
+					label="LIB_SITEGROUND_EXTENSION_PARAMS_SHOW_GPLUS"
+					description="LIB_SITEGROUND_EXTENSION_PARAMS_SHOW_GPLUS_DESC"
+					>
+					<option value="1">JENABLED</option>
+					<option value="0">JDISABLED</option>
+				</field>
+				<field
+					name="show_linkedin"
+					type="radio"
+					class="btn-group btn-group-yesno"
+					default="1"
+					label="LIB_SITEGROUND_EXTENSION_PARAMS_SHOW_LINKEDIN"
+					description="LIB_SITEGROUND_EXTENSION_PARAMS_SHOW_LINKEDIN_DESC"
+					>
+					<option value="1">JENABLED</option>
+					<option value="0">JDISABLED</option>
+				</field>
+			</fieldset>
+			<fieldset name="advanced">
+				<field
+					name="debug"
+					type="radio"
+					class="btn-group btn-group-yesno"
+					default="0"
+					label="LIB_SITEGROUND_EXTENSION_PARAMS_DEBUG"
+					description="LIB_SITEGROUND_EXTENSION_PARAMS_DEBUG_DESC"
+					>
+					<option value="1">JENABLED</option>
+					<option value="0">JDISABLED</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

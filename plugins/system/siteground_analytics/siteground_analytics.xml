@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.x" type="plugin" group="system" method="upgrade">
+	<name>PLG_SYSTEM_SITEGROUND_ANALYTICS</name>
+    <creationDate>February 2015</creationDate>
+    <author>Roberto Segura</author>
+    <authorEmail>roberto@phproberto.com</authorEmail>
+    <authorUrl>www.phproberto.com</authorUrl>
+    <copyright>Copyright (C) 2014-2015 SiteGround.com - All rights reserved.</copyright>
+    <license>GNU General Public License version 2 or later, see LICENSE.</license>
+    <version>1.0.1</version>
+	<description>PLG_SYSTEM_SITEGROUND_ANALYTICS_XML_DESCRIPTION</description>
+
+	<files>
+		<folder>language</folder>
+		<folder>layouts</folder>
+		<filename>LICENSE</filename>
+		<filename>README.md</filename>
+		<filename plugin="siteground_analytics">siteground_analytics.php</filename>
+	</files>
+
+	<config>
+		<fields name="params" addfieldpath="/libraries/siteground/form/field">
+			<fieldset name="basic">
+				<field
+					name="tracking_code"
+					type="text"
+					label="PLG_SYSTEM_SITEGROUND_ANALYTICS_PARAM_TRACKING_CODE"
+					hint="UA-XXXXX-X"
+					description="PLG_SYSTEM_SITEGROUND_ANALYTICS_PARAM_TRACKING_CODE_DESC"
+				/>
+				<field
+					name="display_features"
+					type="radio"
+					class="btn-group btn-group-yesno"
+					default="1"
+					label="PLG_SYSTEM_SITEGROUND_ANALYTICS_PARAM_DISPLAY_FEATURES"
+					description="PLG_SYSTEM_SITEGROUND_ANALYTICS_PARAM_DISPLAY_FEATURES_DESC"
+					>
+					<option value="1">JENABLED</option>
+					<option value="0">JDISABLED</option>
+				</field>
+			</fieldset>
+			<fieldset name="advanced">
+				<field
+					name="debug"
+					type="radio"
+					class="btn-group btn-group-yesno"
+					default="0"
+					label="LIB_SITEGROUND_EXTENSION_PARAMS_DEBUG"
+					description="LIB_SITEGROUND_EXTENSION_PARAMS_DEBUG_DESC"
+					>
+					<option value="1">JENABLED</option>
+					<option value="0">JDISABLED</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

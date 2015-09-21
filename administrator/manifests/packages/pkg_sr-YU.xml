@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<extension type="package" version="3.3">
+   <name>Serbian Latin Language Pack</name>
+   <packagename>sr-YU</packagename>
+   <version>3.3.4.1</version>
+   <creationDate>2014</creationDate>
+   <author>Joomla! Serbia - Translation Team</author>
+   <authorEmail>translation@joomla-serbia.com</authorEmail>
+   <authorUrl>http://www.joomla-serbia.com</authorUrl>
+    <copyright>Copyright (C) 2005 - 2014 Open Source Matters. All rights reserved.</copyright>
+   <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+   <url></url>
+   <packager>Joomla! Serbian Latin</packager>
+   <packagerurl>www.joomla-serbia.com</packagerurl>
+   <description>3.3 Joomla Serbian Latin Language Package</description>
+   <files>
+	<file type="language" client="site" id="sr-YU">site_sr-YU.zip</file>
+	<file type="language" client="administrator" id="sr-YU">admin_sr-YU.zip</file>
+   </files>
+    <updateservers>
+        <server type="collection" priority="1" name="Accredited Joomla! Translations">http://update.joomla.org/language/translationlist_3.xml</server>
+    </updateservers>
+</extension>

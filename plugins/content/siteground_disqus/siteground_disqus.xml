@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.x" type="plugin" group="content" method="upgrade">
+	<name>PLG_CONTENT_SITEGROUND_DISQUS</name>
+    <creationDate>November 2014</creationDate>
+    <author>Roberto Segura</author>
+    <authorEmail>roberto@phproberto.com</authorEmail>
+    <authorUrl>www.phproberto.com</authorUrl>
+    <copyright>Copyright (C) 2014 SiteGround.com - All rights reserved.</copyright>
+    <license>GNU General Public License version 2 or later, see LICENSE.</license>
+    <version>1.0.0</version>
+	<description>PLG_CONTENT_SITEGROUND_DISQUS_XML_DESCRIPTION</description>
+
+	<files>
+		<folder>language</folder>
+		<folder>layouts</folder>
+		<filename>LICENSE</filename>
+		<filename>README.md</filename>
+		<filename plugin="siteground_disqus">siteground_disqus.php</filename>
+	</files>
+
+	<media folder="media">
+		<folder>plg_content_siteground_disqus</folder>
+	</media>
+
+	<config>
+		<fields name="params" addfieldpath="/libraries/siteground/form/field">
+			<fieldset name="basic">
+				<field
+					name="script"
+					type="siteground.script"
+					hiddenLabel="true"
+					loadJquery="true"
+					script="plg_content_siteground_disqus/js/plg-content-siteground-backend.min.js"
+				/>
+				<field
+					name="disqusShortname"
+					type="text"
+					label="PLG_CONTENT_SITEGROUND_DISQUS_PARAM_DISQUS_SHORTNAME"
+					description="PLG_CONTENT_SITEGROUND_DISQUS_PARAM_DISQUS_SHORTNAME_DESC"
+				/>
+				<field
+					name="mode"
+					type="list"
+					label="PLG_CONTENT_SITEGROUND_DISQUS_PARAM_MODE"
+					description="PLG_CONTENT_SITEGROUND_DISQUS_PARAM_MODE_DESC"
+					default="include"
+					class="span6"
+					>
+						<option value="include">PLG_CONTENT_SITEGROUND_DISQUS_PARAM_MODE_OPTION_INCLUDE</option>
+						<option value="exclude">PLG_CONTENT_SITEGROUND_DISQUS_PARAM_MODE_OPTION_EXCLUDE</option>
+				</field>
+				<field
+					name="excludedCategories"
+					type="category"
+					extension="com_content"
+					multiple="true"
+					label="PLG_CONTENT_SITEGROUND_DISQUS_PARAM_EXCLUDED_CATEGORIES"
+					description="PLG_CONTENT_SITEGROUND_DISQUS_PARAM_EXCLUDED_CATEGORIES_DESC"
+					class="js-siteground-disqus-mode-exclude"
+				/>
+				<field
+					name="includedCategories"
+					type="category"
+					extension="com_content"
+					multiple="true"
+					label="PLG_CONTENT_SITEGROUND_DISQUS_PARAM_INCLUDED_CATEGORIES"
+					description="PLG_CONTENT_SITEGROUND_DISQUS_PARAM_INCLUDED_CATEGORIES_DESC"
+					class="js-siteground-disqus-mode-include"
+				/>
+			</fieldset>
+			<fieldset name="advanced">
+				<field
+					name="mixLanguages"
+					type="radio"
+					class="btn-group btn-group-yesno"
+					default="0"
+					label="PLG_CONTENT_SITEGROUND_DISQUS_PARAM_MIX_LANGUAGES"
+					description="PLG_CONTENT_SITEGROUND_DISQUS_PARAM_MIX_LANGUAGES_DESC"
+					>
+					<option value="1">JENABLED</option>
+					<option value="0">JDISABLED</option>
+				</field>
+				<field
+					name="developerMode"
+					type="radio"
+					class="btn-group btn-group-yesno"
+					default="0"
+					label="PLG_CONTENT_SITEGROUND_DISQUS_PARAM_DEVELOPER_MODE"
+					description="PLG_CONTENT_SITEGROUND_DISQUS_PARAM_DEVELOPER_MODE_DESC"
+					>
+					<option value="1">JENABLED</option>
+					<option value="0">JDISABLED</option>
+				</field>
+				<field
+					name="debug"
+					type="radio"
+					class="btn-group btn-group-yesno"
+					default="0"
+					label="LIB_SITEGROUND_EXTENSION_PARAMS_DEBUG"
+					description="LIB_SITEGROUND_EXTENSION_PARAMS_DEBUG_DESC"
+					>
+					<option value="1">JENABLED</option>
+					<option value="0">JDISABLED</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

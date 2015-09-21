@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<extension type="package" version="3.3">
+	<name>Flemish Language Pack</name>
+	<packagename>nl-BE</packagename>
+	<version>3.3.6.1</version>
+	<creationDate>01/10/2014</creationDate>
+	<author>Flemish translation team: Pangea</author>
+	<authorEmail>frank.joris@skynet.be</authorEmail>
+	<authorUrl>pangea.suburbs.be</authorUrl>
+	<copyright>Copyright (C) 2007 - 2014 Open Source Matters. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<url></url>
+	<packager>Pangea</packager>
+	<packagerurl>pangea.suburbs.be</packagerurl>
+	<description>
+		<![CDATA[
+		<div style="text-align:left;">
+			<h3>Joomla! 3.3.6 Full Flemish (nl-BE) Language Package - Version 3.3.6v1</h3>
+			<h3>Volledig Vlaams (nl-BE) taalpakket voor Joomla! 3.3.6 - Versie 3.3.6v1</h3>
+		</div>
+		]]>
+	</description>
+	<files>
+		<file type="language" client="site" id="nl-BE">site_nl-BE.zip</file>
+		<file type="language" client="administrator" id="nl-BE">admin_nl-BE.zip</file>
+	</files>
+	<updateservers>
+		<server type="collection" priority="1" name="Accredited Joomla! Translations">http://update.joomla.org/language/translationlist_3.xml</server>
+	</updateservers>
+</extension>

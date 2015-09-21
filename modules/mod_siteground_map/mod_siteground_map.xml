@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1" client="site" method="upgrade">
+	<name>MOD_SITEGROUND_MAP</name>
+    <creationDate>November 2014</creationDate>
+    <author>Roberto Segura</author>
+    <authorEmail>roberto@phproberto.com</authorEmail>
+    <authorUrl>www.phproberto.com</authorUrl>
+    <copyright>Copyright (C) 2014 SiteGround.com - All rights reserved.</copyright>
+    <license>GNU General Public License version 2 or later, see LICENSE.</license>
+    <version>1.0.0</version>
+	<description>MOD_SITEGROUND_MAP_XML_DESCRIPTION</description>
+	<files>
+		<folder>language</folder>
+		<folder>module</folder>
+		<folder>tmpl</folder>
+		<filename>LICENSE</filename>
+		<filename>README.md</filename>
+		<filename module="mod_siteground_map">mod_siteground_map.php</filename>
+		<filename>mod_siteground_map.xml</filename>
+	</files>
+
+	<media folder="media">
+		<folder>mod_siteground_map</folder>
+	</media>
+
+	<config>
+		<fields name="params" addfieldpath="/libraries/siteground/form/field">
+			<fieldset name="basic">
+				<field
+					name="script"
+					type="siteground.script"
+					hiddenLabel="true"
+					loadJquery="true"
+					script="mod_siteground_map/js/mod-siteground-map_backend.min.js"
+				/>
+				<field
+					name="mode"
+					type="list"
+					label="MOD_SITEGROUND_MAP_PARAM_MAP_MODE"
+					description="MOD_SITEGROUND_MAP_PARAM_MAP_MODE_DESC"
+					default="address"
+					>
+						<option value="address">MOD_SITEGROUND_MAP_PARAM_MAP_MODE_OPTION_ADDRESS</option>
+						<option value="coordinates">MOD_SITEGROUND_MAP_PARAM_MAP_MODE_OPTION_COORDINATES</option>
+						<option value="iframe">MOD_SITEGROUND_MAP_PARAM_MAP_MODE_OPTION_IFRAME</option>
+				</field>
+				<field
+					name="iframe"
+					type="textarea"
+					rows="3" cols="30" filter="raw"
+					label="MOD_SITEGROUND_MAP_PARAM_IFRAME"
+					description="MOD_SITEGROUND_MAP_PARAM_IFRAME_DESC"
+					class="span12 js-mod-siteground-map-mode js-mod-siteground-map-mode-iframe"
+				/>
+				<field
+					name="latitude"
+					type="text"
+					label="MOD_SITEGROUND_MAP_PARAM_LATITUDE"
+					description="MOD_SITEGROUND_MAP_PARAM_LATITUDE_DESC"
+					class="js-mod-siteground-map-mode js-mod-siteground-map-mode-coordinates"
+				/>
+				<field
+					name="longitude"
+					type="text"
+					label="MOD_SITEGROUND_MAP_PARAM_LONGITUDE"
+					description="MOD_SITEGROUND_MAP_PARAM_LONGITUDE_DESC"
+					class="js-mod-siteground-map-mode js-mod-siteground-map-mode-coordinates"
+				/>
+				<field
+					name="address"
+					type="text"
+					label="MOD_SITEGROUND_MAP_PARAM_ADDRESS"
+					description="MOD_SITEGROUND_MAP_PARAM_ADDRESS_DESC"
+					class="js-mod-siteground-map-mode js-mod-siteground-map-mode-address span9"
+				/>
+				<field
+					name="zoom"
+					type="integer"
+					first="1" last="20" step="1"
+					label="MOD_SITEGROUND_MAP_PARAM_ZOOM"
+					description="MOD_SITEGROUND_MAP_PARAM_ZOOM_DESC"
+					>
+					<option value="">Default</option>
+				</field>
+				<field
+					name="type"
+					type="list"
+					label="MOD_SITEGROUND_MAP_PARAM_TYPE"
+					description="MOD_SITEGROUND_MAP_PARAM_TYPE_DESC"
+					>
+					<option value="">MOD_SITEGROUND_MAP_PARAM_TYPE_OPTION_MAP</option>
+					<option value="k">MOD_SITEGROUND_MAP_PARAM_TYPE_OPTION_SATELLITE</option>
+				</field>
+				<field
+					name="size"
+					type="list"
+					label="MOD_SITEGROUND_MAP_PARAM_SIZE"
+					description="MOD_SITEGROUND_MAP_PARAM_SIZE_DESC"
+					>
+					<option value="responsive">MOD_SITEGROUND_MAP_PARAM_SIZE_OPTION_RESPONSIVE</option>
+					<option value="fixed">MOD_SITEGROUND_MAP_PARAM_SIZE_OPTION_FIXED</option>
+				</field>
+				<field
+					name="height"
+					type="text"
+					default="300px"
+					label="MOD_SITEGROUND_MAP_PARAM_HEIGHT"
+					description="MOD_SITEGROUND_MAP_PARAM_HEIGHT_DESC"
+					class="js-mod-siteground-map-size js-mod-siteground-map-size-fixed"
+				/>
+				<field
+					name="width"
+					type="text"
+					default="100%"
+					label="MOD_SITEGROUND_MAP_PARAM_WIDTH"
+					description="MOD_SITEGROUND_MAP_PARAM_WIDTH_DESC"
+					class="js-mod-siteground-map-size js-mod-siteground-map-size-fixed"
+				/>
+			</fieldset>
+			<fieldset name="advanced">
+				<field
+					name="debug"
+					type="radio"
+					class="btn-group btn-group-yesno"
+					default="0"
+					label="LIB_SITEGROUND_EXTENSION_PARAMS_DEBUG"
+					description="LIB_SITEGROUND_EXTENSION_PARAMS_DEBUG_DESC"
+					>
+					<option value="1">JENABLED</option>
+					<option value="0">JDISABLED</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>
